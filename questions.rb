@@ -74,6 +74,7 @@ end
 # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
 # are 2 palindromes (bob and radar), so the method should return 2
 def number_of_elements_that_are_palindromes(array)
+
 end
 
 # return the shortest word in an array
@@ -88,11 +89,13 @@ end
 # add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
 def total_of_array(array)
+	array.inject{|sum, number| sum + number}
 end
 
 # turn an array into itself repeated twice. So [1, 2, 3]
 # becomes [1, 2, 3, 1, 2, 3]
 def double_array(array)
+	array + array
 end
 
 # convert a symbol into a string
@@ -199,6 +202,7 @@ end
 
 # count the number of words in a file
 def word_count_a_file(file_path)
+	File.open(file_path){ |f| f.read }.scan(/\w+/).length
 end
 
 # --- tougher ones ---

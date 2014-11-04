@@ -76,10 +76,10 @@ describe 'the Friday test :)' do
   #   expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   # end
 
-#   specify 'number_of_elements_that_are_palindromes' do
-#     n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
-#     expect(n).to eq 3
-#   end
+  # specify 'number_of_elements_that_are_palindromes' do
+  #   n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
+  #   expect(n).to eq 3
+  # end
 
   specify 'shortest_word_in_array' do
     n = shortest_word_in_array %w(here is a bunch of words of different lengths)
@@ -91,15 +91,15 @@ describe 'the Friday test :)' do
 #     expect(n).to eq 'different'
 #   end
 
-#   specify 'total_of_array' do
-#     n = total_of_array [1, 3, 5, 6, 2, 8]
-#     expect(n).to eq 25
-#   end
+  specify 'total_of_array' do
+    n = total_of_array [1, 3, 5, 6, 2, 8]
+    expect(n).to eq 25
+  end
 
-#   specify 'double_array' do
-#     n = double_array [1, 2, 3]
-#     expect(n).to eq [1, 2, 3, 1, 2, 3]
-#   end
+  specify 'double_array' do
+    n = double_array [1, 2, 3]
+    expect(n).to eq [1, 2, 3, 1, 2, 3]
+  end
 
 #   specify 'turn_symbol_into_string' do
 #     n = turn_symbol_into_string :foobar
@@ -194,10 +194,10 @@ describe 'the Friday test :)' do
     expect(b).to eq 1.7320508075688772
   end
 
-#   specify 'word_count_a_file' do
-#     n = word_count_a_file 'lorem.txt'
-#     expect(n).to eq 70
-#   end
+  specify 'word_count_a_file' do
+    n = word_count_a_file 'lorem.txt'
+    expect(n).to eq 70
+  end
 
 #   specify 'call_method_from_string' do
 #     expect { call_method_from_string('foobar') }.to raise_error(NameError)
