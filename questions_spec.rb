@@ -126,20 +126,20 @@ describe 'the Friday test :)' do
 #     expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 #   end
 
-#   specify 'swap_keys_and_values_in_a_hash' do
-#     n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
-#     expect(n).to eq({'b' => 'a', 'd' => 'c'})
-#   end
+  specify 'swap_keys_and_values_in_a_hash' do
+    n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
+    expect(n).to eq({'b' => 'a', 'd' => 'c'})
+  end
 
-#   specify 'add_together_keys_and_values' do
-#     n = add_together_keys_and_values({1 => 1, 2 => 2})
-#     expect(n).to eq 6
-#   end
+  specify 'add_together_keys_and_values' do
+    n = add_together_keys_and_values({1 => 1, 2 => 2})
+    expect(n).to eq 6
+  end
 
-#   specify 'remove_capital_letters_from_string' do
-#     n = remove_capital_letters_from_string 'Hello JohnDoe'
-#     expect(n).to eq 'ello ohnoe'
-#   end
+  # specify 'remove_capital_letters_from_string' do
+  #   n = remove_capital_letters_from_string 'Hello JohnDoe'
+  #   expect(n).to eq 'ello ohnoe'
+  # end
 
   specify 'round_up_number' do
     n = round_up_number 3.142
@@ -166,13 +166,13 @@ describe 'the Friday test :)' do
   #   expect(n).to eq 'The Lion the Witch and the Wardrobe'
   # end
 
-#   specify 'check_a_string_for_special_characters' do
-#     a = check_a_string_for_special_characters 'ABCdef123'
-#     b = check_a_string_for_special_characters 'ABC@def123!'
+  # specify 'check_a_string_for_special_characters' do
+  #   a = check_a_string_for_special_characters 'ABCdef123'
+  #   b = check_a_string_for_special_characters 'ABC@def123!'
 
-#     expect(a).to be_false
-#     expect(b).to be_true
-#   end
+  #   expect(a).to be_false
+  #   expect(b).to be_true
+  # end
 
 #   specify 'get_upper_limit_of' do
 #     n = get_upper_limit_of 1..20
