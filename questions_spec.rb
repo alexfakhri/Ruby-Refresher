@@ -141,15 +141,15 @@ describe 'the Friday test :)' do
 #     expect(n).to eq 'ello ohnoe'
 #   end
 
-#   specify 'round_up_number' do
-#     n = round_up_number 3.142
-#     expect(n).to eq 4
-#   end
+  specify 'round_up_number' do
+    n = round_up_number 3.142
+    expect(n).to eq 4
+  end
 
-#   specify 'round_down_number' do
-#     n = round_down_number 4.9
-#     expect(n).to eq 4
-#   end
+  specify 'round_down_number' do
+    n = round_down_number 4.9
+    expect(n).to eq 4
+  end
 
 #   specify 'format_date_nicely' do
 #     n = format_date_nicely Time.new(2013, 10, 31)
@@ -161,10 +161,10 @@ describe 'the Friday test :)' do
 #     expect(n).to eq 'makersacademy'
 #   end
 
-#   specify 'titleize_a_string' do
-#     n = titleize_a_string 'the lion the witch and the wardrobe'
-#     expect(n).to eq 'The Lion the Witch and the Wardrobe'
-#   end
+  # specify 'titleize_a_string' do
+  #   n = titleize_a_string 'the lion the witch and the wardrobe'
+  #   expect(n).to eq 'The Lion the Witch and the Wardrobe'
+  # end
 
 #   specify 'check_a_string_for_special_characters' do
 #     a = check_a_string_for_special_characters 'ABCdef123'
@@ -187,12 +187,12 @@ describe 'the Friday test :)' do
 #     expect(b).to be_true
 #   end
 
-#   specify 'square_root_of' do
-#     a = square_root_of 9
-#     b = square_root_of 3
-#     expect(a).to eq 3.0
-#     expect(b).to eq 1.7320508075688772
-#   end
+  specify 'square_root_of' do
+    a = square_root_of 9
+    b = square_root_of 3
+    expect(a).to eq 3.0
+    expect(b).to eq 1.7320508075688772
+  end
 
 #   specify 'word_count_a_file' do
 #     n = word_count_a_file 'lorem.txt'
