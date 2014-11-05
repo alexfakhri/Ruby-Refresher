@@ -158,7 +158,7 @@ describe 'the Friday test :)' do
 
   specify 'get_domain_name_from_email_address' do
     n = get_domain_name_from_email_address 'alex@makersacademy.com'
-    expect(n).to eq '@makersacademy'
+    expect(n).to eq 'makersacademy'
   end
 
   # specify 'titleize_a_string' do
@@ -166,26 +166,26 @@ describe 'the Friday test :)' do
   #   expect(n).to eq 'The Lion the Witch and the Wardrobe'
   # end
 
-  # specify 'check_a_string_for_special_characters' do
-  #   a = check_a_string_for_special_characters 'ABCdef123'
-  #   b = check_a_string_for_special_characters 'ABC@def123!'
+  specify 'check_a_string_for_special_characters' do
+    a = check_a_string_for_special_characters 'ABCdef123'
+    b = check_a_string_for_special_characters 'ABC@def123!'
 
-  #   expect(a).to be_false
-  #   expect(b).to be_true
-  # end
+    expect(a).to be false
+    expect(b).to be true
+  end
 
-#   specify 'get_upper_limit_of' do
-#     n = get_upper_limit_of 1..20
-#     expect(n).to eq 20
-#   end
+  specify 'get_upper_limit_of' do
+    n = get_upper_limit_of 1..20
+    expect(n).to eq 20
+  end
 
-#   specify 'is_a_3_dot_range?' do
-#     a = is_a_3_dot_range? 1..20
-#     b = is_a_3_dot_range? 1...20
+  specify 'is_a_3_dot_range?' do
+    a = is_a_3_dot_range? 1..20
+    b = is_a_3_dot_range? 1...20
 
-#     expect(a).to be_false
-#     expect(b).to be_true
-#   end
+    expect(a).to be false
+    expect(b).to be true
+  end
 
   specify 'square_root_of' do
     a = square_root_of 9
@@ -199,9 +199,9 @@ describe 'the Friday test :)' do
     expect(n).to eq 70
   end
 
-#   specify 'call_method_from_string' do
-#     expect { call_method_from_string('foobar') }.to raise_error(NameError)
-#   end
+  specify 'call_method_from_string' do
+    expect { call_method_from_string('foobar') }.to raise_error(NameError)
+  end
 
 #   specify 'is_a_2014_bank_holiday?' do
 #     a = is_a_2014_bank_holiday?(Time.new(2014, 8, 25))
