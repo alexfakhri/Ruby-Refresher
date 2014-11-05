@@ -13,10 +13,10 @@ describe 'the Friday test :)' do
     expect(n).to eq ['apples', 'avocados']
   end
 
-  # specify 'select_elements_starting_with_vowel' do
-  #   n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
-  #   expect(n).to eq ['omar', 'idris', 'angela']
-  # end
+  specify 'select_elements_starting_with_vowel' do
+    n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
+    expect(n).to eq ['omar', 'idris', 'angela']
+  end
 
   specify 'remove_nils_from_array' do
     n = remove_nils_from_array ['a', 'b', nil, nil, false, 'c', nil]
@@ -55,13 +55,13 @@ describe 'the Friday test :)' do
     expect(n).to eq ['puma', 'maker', 'sky']
   end
 
-  # specify 'get_first_half_of_string' do
-  #   a = get_first_half_of_string 'banana'
-  #   b = get_first_half_of_string 'apple'
+  specify 'get_first_half_of_string' do
+    a = get_first_half_of_string 'banana'
+    b = get_first_half_of_string 'apple'
 
-  #   expect(a).to eq 'ban'
-  #   expect(b).to eq 'app'
-  # end
+    expect(a).to eq 'ban'
+    expect(b).to eq 'app'
+  end
 
   specify 'make_numbers_negative' do
     a = make_numbers_negative 5
@@ -86,10 +86,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 'a'
   end
 
-#   specify 'longest_word_in_array' do
-#     n = longest_word_in_array %w(here is a bunch of words of different lengths)
-#     expect(n).to eq 'different'
-#   end
+  specify 'longest_word_in_array' do
+    n = longest_word_in_array %w(here is a bunch of words of different lengths)
+    expect(n).to eq 'different'
+  end
 
   specify 'total_of_array' do
     n = total_of_array [1, 3, 5, 6, 2, 8]
@@ -111,10 +111,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 17
   end
 
-#   specify 'get_elements_until_greater_than_five' do
-#     n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
-#     expect(n).to eq [1, 3, 5, 4, 1, 2]
-#   end
+  # specify 'get_elements_until_greater_than_five' do
+  #   n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
+  #   expect(n).to eq [1, 3, 5, 4, 1, 2]
+  # end
 
   specify 'convert_array_to_a_hash' do
     n = convert_array_to_a_hash ['a', 'b', 'c', 'd']

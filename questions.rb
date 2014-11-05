@@ -5,7 +5,7 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
-	# array.select{|names| names[0] == 'a' && 'i'}
+	array.select{|names| names[0] =~ /[aeiou]/}
 end
 
 # remove instances of nil (but NOT false) from an array
@@ -53,7 +53,7 @@ end
 # 'banana' becomes 'ban'. If the string is an odd number of letters
 # round up - so 'apple' becomes 'app'
 def get_first_half_of_string(string)
-
+	string[0...3]
 end
 
 # turn a positive integer into a negative integer. A negative integer
@@ -84,6 +84,7 @@ end
 
 # return the shortest word in an array
 def longest_word_in_array(array)
+	array.max_by{|a| a.length}
 end
 
 # add up all the numbers in an array, so [1, 3, 5, 6]
@@ -165,6 +166,7 @@ end
 # take a date and format it like dd/mm/yyyy, so Halloween 2013
 # becomes 31/10/2013
 def format_date_nicely(date)
+	
 end
 
 # get the domain name *without* the .com part, from an email address
