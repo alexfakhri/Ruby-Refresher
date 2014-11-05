@@ -71,10 +71,10 @@ describe 'the Friday test :)' do
     expect(b).to eq -7
   end
 
-  # specify 'separate_array_into_even_and_odd_numbers' do
-  #   n = separate_array_into_even_and_odd_numbers [1, 2, 3, 4, 5, 6, 7]
-  #   expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
-  # end
+  specify 'separate_array_into_even_and_odd_numbers' do
+    n = separate_array_into_even_and_odd_numbers [1, 2, 3, 4, 5, 6, 7]
+    expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
+  end
 
   # specify 'number_of_elements_that_are_palindromes' do
   #   n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
@@ -121,10 +121,10 @@ describe 'the Friday test :)' do
     expect(n).to eq({'a' => 'b', 'c' => 'd'})
   end
 
-#   specify 'get_all_letters_in_array_of_words' do
-#     n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
-#     expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
-#   end
+  specify 'get_all_letters_in_array_of_words' do
+    n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
+    expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+  end
 
   specify 'swap_keys_and_values_in_a_hash' do
     n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
@@ -151,10 +151,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 4
   end
 
-#   specify 'format_date_nicely' do
-#     n = format_date_nicely Time.new(2013, 10, 31)
-#     expect(n).to eq '31/10/2013'
-#   end
+  specify 'format_date_nicely' do
+    n = format_date_nicely Time.new(2013, 10, 31)
+    expect(n).to eq '31/10/2013'
+  end
 
 #   specify 'get_domain_name_from_email_address' do
 #     n = get_domain_name_from_email_address 'alex@makersacademy.com'

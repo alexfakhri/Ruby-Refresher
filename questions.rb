@@ -53,7 +53,9 @@ end
 # 'banana' becomes 'ban'. If the string is an odd number of letters
 # round up - so 'apple' becomes 'app'
 def get_first_half_of_string(string)
-	string[0...3]
+	array = string.split('')
+	left, right = array.each_slice((array.size/2.0).round).to_a
+	left.join
 end
 
 # turn a positive integer into a negative integer. A negative integer
@@ -67,6 +69,7 @@ end
 # even numbers come first
 # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
 def separate_array_into_even_and_odd_numbers(array)
+	array.partition { |number| number.even? }
 end
 
 # count the numbers of elements in an element which are palindromes
@@ -129,6 +132,7 @@ end
 # . e.g. the array ['cat', 'dog', 'fish'] becomes
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 def get_all_letters_in_array_of_words(array)
+	(array.join).split('').sort
 end
 
 # swap the keys and values in a hash. e.g.
@@ -166,7 +170,7 @@ end
 # take a date and format it like dd/mm/yyyy, so Halloween 2013
 # becomes 31/10/2013
 def format_date_nicely(date)
-	
+	date.strftime("%d/%m/%Y")
 end
 
 # get the domain name *without* the .com part, from an email address
