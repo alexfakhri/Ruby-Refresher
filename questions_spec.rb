@@ -76,10 +76,10 @@ describe 'the Friday test :)' do
     expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   end
 
-  # specify 'number_of_elements_that_are_palindromes' do
-  #   n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
-  #   expect(n).to eq 3
-  # end
+  specify 'number_of_elements_that_are_palindromes' do
+    n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
+    expect(n).to eq 3
+  end
 
   specify 'shortest_word_in_array' do
     n = shortest_word_in_array %w(here is a bunch of words of different lengths)
@@ -111,10 +111,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 17
   end
 
-  # specify 'get_elements_until_greater_than_five' do
-  #   n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
-  #   expect(n).to eq [1, 3, 5, 4, 1, 2]
-  # end
+  specify 'get_elements_until_greater_than_five' do
+    n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
+    expect(n).to eq [1, 3, 5, 4, 1, 2]
+  end
 
   specify 'convert_array_to_a_hash' do
     n = convert_array_to_a_hash ['a', 'b', 'c', 'd']
@@ -136,10 +136,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 6
   end
 
-  # specify 'remove_capital_letters_from_string' do
-  #   n = remove_capital_letters_from_string 'Hello JohnDoe'
-  #   expect(n).to eq 'ello ohnoe'
-  # end
+  specify 'remove_capital_letters_from_string' do
+    n = remove_capital_letters_from_string 'Hello JohnDoe'
+    expect(n).to eq 'ello ohnoe'
+  end
 
   specify 'round_up_number' do
     n = round_up_number 3.142
@@ -156,10 +156,10 @@ describe 'the Friday test :)' do
     expect(n).to eq '31/10/2013'
   end
 
-#   specify 'get_domain_name_from_email_address' do
-#     n = get_domain_name_from_email_address 'alex@makersacademy.com'
-#     expect(n).to eq 'makersacademy'
-#   end
+  specify 'get_domain_name_from_email_address' do
+    n = get_domain_name_from_email_address 'alex@makersacademy.com'
+    expect(n).to eq '@makersacademy'
+  end
 
   # specify 'titleize_a_string' do
   #   n = titleize_a_string 'the lion the witch and the wardrobe'

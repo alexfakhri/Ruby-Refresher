@@ -77,7 +77,7 @@ end
 # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
 # are 2 palindromes (bob and radar), so the method should return 2
 def number_of_elements_that_are_palindromes(array)
-
+	array.count{ |word| word.reverse == word } 
 end
 
 # return the shortest word in an array
@@ -118,6 +118,7 @@ end
 # [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
 # becomes [1, 3, 5, 4, 1, 2]
 def get_elements_until_greater_than_five(array)
+	array.take_while{|number| number <= 5}
 end
 
 # turn an array (with an even number of elements) into a hash, by
@@ -152,7 +153,7 @@ end
 # take out all the capital letters from a string
 # so 'Hello JohnDoe' becomes 'ello ohnoe'
 def remove_capital_letters_from_string(string)
-
+	string.gsub(/[A-Z]/,'')
 end
 
 # round up a float up and convert it to an Integer,
@@ -176,6 +177,7 @@ end
 # get the domain name *without* the .com part, from an email address
 # so alex@makersacademy.com becomes makersacademy
 def get_domain_name_from_email_address(email)
+	email.match('\@([^.]+)').to_s
 end
 
 # capitalize the first letter in each word of a string, 
